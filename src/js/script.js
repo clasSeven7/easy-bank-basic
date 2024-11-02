@@ -7,7 +7,7 @@ menuBtn.onclick = () => {
   navbar.classList.toggle('active');
 };
 
-Window.onscroll = () => {
+window.onscroll = () => {
   navbar.classList.remove('fa-xmark');
   navbar.classList.remove('active');
 

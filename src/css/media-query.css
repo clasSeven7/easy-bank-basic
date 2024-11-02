@@ -122,6 +122,14 @@ section {
   .home .flex .content h3 {
     font-size: 2.5rem;
   }
+
+  .about .row .content h3 {
+    font-size: 2.5rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.7rem;
+  }
 }
 
 @media (max-width: 480px) {

@@ -47,10 +47,6 @@ html {
   background-color: var(--main-color);
 }
 
-/* body {
-  height: 50rem;
-} */
-
 section {
   margin: 0 auto;
   max-width: 120rem;
@@ -95,6 +91,17 @@ section {
 .btn:hover::before {
   left: 0;
   width: 100%;
+}
+
+.heading {
+  font-size: 3rem;
+  color: var(--black);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.heading span {
+  color: var(--main-color);
 }
 
 /* =================================== Header =============================== */
@@ -198,6 +205,85 @@ section {
 .home .flex .content p {
   line-height: 1.8;
   font-size: 1.6rem;
+  padding: 0.5rem 0;
+  color: var(--light-color);
+}
+
+/* =============================== Partners ================================= */
+.partners .box-container {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 16rem);
+  gap: 2.5rem;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.partners .box-container .box {
+  width: 100%;
+}
+
+/* ================================ About =================================== */
+.about .heading {
+  text-align: left;
+}
+
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.about .row .image {
+  flex: 1 1 45rem;
+  position: relative;
+  z-index: 0;
+}
+
+.about .row .image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  border-radius: 0.5rem;
+  background: linear-gradient(125deg, var(--light-bg), var(--main-color));
+  z-index: -1;
+  transition: 0.2s linear;
+}
+
+.about .row .image:hover::before {
+  transform: translateX(20%) rotate(90deg);
+  width: 60%;
+}
+
+.about .row .image img {
+  width: 100%;
+}
+
+.about .row .image:hover img {
+  transform: scale(0.8);
+}
+
+.about .row .content {
+  flex: 1 1 45rem;
+}
+
+.about .row .content h3 {
+  font-size: 4rem;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+}
+
+.about .row .content h3 span {
+  color: var(--main-color);
+}
+
+.about .row .content p {
+  line-height: 1.8;
+  font-size: 1.8rem;
   padding: 0.5rem 0;
   color: var(--light-color);
 }
