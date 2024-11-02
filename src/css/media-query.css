@@ -118,6 +118,10 @@ section {
     font-size: 2.5rem;
     margin: 2rem;
   }
+
+  .home .flex .content h3 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 480px) {
