@@ -130,6 +130,22 @@ section {
   .about .row .content p {
     font-size: 1.7rem;
   }
+
+  .footer .flex {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .footer .flex .links a {
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .footer .credit {
+    flex-flow: column;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
